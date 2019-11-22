@@ -250,3 +250,36 @@ BULK INSERT web_site
     --ERRORFILE = 'C:\Users\Alex\Desktop\trash.dat',
     TABLOCK
     )
+
+BULK INSERT time_dim
+    FROM 'C:\Users\Alex\Desktop\produced_dataset_1gb\produced_dataset\1gb\time_dim.dat'
+    WITH
+    (
+    FIRSTROW = 1,
+    FIELDTERMINATOR = '|',  --CSV field delimiter
+    ROWTERMINATOR = '0x0a',   --Use to shift the control to next row
+    --ERRORFILE = 'C:\Users\Alex\Desktop\trash.dat',
+    TABLOCK
+    )
+
+BULK INSERT warehouse
+    FROM 'C:\Users\Alex\Desktop\produced_dataset_1gb\produced_dataset\1gb\warehouse.dat'
+    WITH
+    (
+    FIRSTROW = 1,
+    FIELDTERMINATOR = '|',  --CSV field delimiter
+    ROWTERMINATOR = '0x0a',   --Use to shift the control to next row
+    --ERRORFILE = 'C:\Users\Alex\Desktop\trash.dat',
+    TABLOCK
+    )
+
+BULK INSERT catalog_page
+    FROM 'C:\Users\Alex\Desktop\produced_dataset_1gb\produced_dataset\1gb\catalog_page.dat'
+    WITH
+    (
+    FIRSTROW = 1,
+    FIELDTERMINATOR = '|',  --CSV field delimiter
+    ROWTERMINATOR = '0x0a',   --Use to shift the control to next row
+    --ERRORFILE = 'C:\Users\Alex\Desktop\trash.dat',
+    TABLOCK
+    )
