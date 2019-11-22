@@ -97,8 +97,8 @@ BULK INSERT dbgen_version
     TABLOCK
     )
 
-BULK INSERT hip_mode
-    FROM 'C:\Users\Alex\Desktop\produced_dataset_1gb\produced_dataset\1gb\hip_mode.dat'
+BULK INSERT ship_mode
+    FROM 'C:\Users\Alex\Desktop\produced_dataset_1gb\produced_dataset\1gb\ship_mode.dat'
     WITH
     (
     FIRSTROW = 1,
