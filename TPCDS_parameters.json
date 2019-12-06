@@ -1,0 +1,5 @@
+{
+	"SQLSERVER_name": "127.0.0.1,3306",
+	"DB_name": "TPCDS_RS_10GB",
+	"output_file_name": "query_times10GBRS"
+}
